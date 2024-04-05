@@ -7,6 +7,7 @@ Use a `resource.` prefix to access these attributes unless otherwise noted. For 
 For more information about Qute, see the [Qute guide](https://quarkus.io/guides/qute).
 
 - [5eTools template attributes](dnd5e/README.md)
+- [Open5e template attributes](open5e/README.md)
 - [Pf2eTools template attributes](pf2e/README.md)
 
 ## References

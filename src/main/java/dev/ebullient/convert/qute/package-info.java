@@ -17,6 +17,7 @@
  *
  * <ul>
  * <li>{@link dev.ebullient.convert.tools.dnd5e.qute 5eTools template attributes}</li>
+ * <li>{@link dev.ebullient.convert.tools.open5e.qute Open5e template attributes}</li>
  * <li>{@link dev.ebullient.convert.tools.pf2e.qute Pf2eTools template attributes}</li>
  * </ul>
  */

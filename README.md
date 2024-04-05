@@ -201,6 +201,80 @@ Next step:
 
 - Create your own [configuration file](docs/configuration.md).
 
+## Convert Open5e JSON data
+
+🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 🚧 ⚠ 
+
+> [!WARNING]
+> These are brand new instructions for the [Open5e](https://open5e.com) data. These have not been thuroughly tested.
+
+> [!NOTE]
+> Instructions here use backslashes to wrap lines for readability (a common practice for linux-based command shells).
+> *If you are using Windows*, you will need to remove the backslashes and put the command on a single line. You may also need to append `.exe` to the command name (though it should work without).
+
+1. Download a release of the Open5e API mirror, or Create a shallow clone of the Open5e API mirror repo (which can/should be deleted afterwards):
+
+    ```shell
+    git clone --depth 1 https://github.com/open5e/open5e-api.git
+    ```
+
+2. Invoke the CLI. In this first example, let's generate indexes and markdown for SRD content:
+
+    ```shell
+    ttrpg-convert \
+      --index \
+      -g o5e \
+      -o dm \
+      open5e-api.git/data/v1
+    ```
+
+    - `--index` generates two index files: `all-index.json` and `src-index.json`.
+
+        > 🚀 TIP:
+        > - Use `all-index.json` to see the reference keys for all discovered content. This can confirm that an included source was actually read.
+        > - Use `src-index.json` to see the reference keys for content that was included in the generated output. This can confirm that your source selection is working as expected.
+
+    - `-o dm` The target output directory (`dm` in this case). Files will be created in this directory.
+
+    The rest of the command-line specifies input files:
+
+    - `open5e-api.git/data/v1` Path to the Open5e `data/v1` directory (from a clone or release of the repo)
+      - There are two versions (`v1` and `v2`). Only Version 1 `v1` is supported.
+
+    This should produce a set of markdown files in the `dm` directory that contains only SRD content.
+
+3. Invoke the command again and include additional sources:
+
+    ```shell
+    ttrpg-convert \
+        --index \
+        -g o5e \
+        -o dm \
+        -s a5e, menagerie \
+        open5e-api.git/data/v1
+    ```
+
+    - `-s a5e, menagerie` will include reference material from the *Level UP Advanced 5e*, the *Level Up Monsterous Menagerie*.
+
+        > 🚀 Note: Only include content you own. Find the identifier for your sources in the [Source Map](./docs/sourceMap.md#source-name-mapping-for-open5e).
+
+We now know that the CLI is working!
+
+Specifying sources on the command line with the `-s` option gets messy in a hurry. Configuration beyond this basic example should use a configuration file, specified with the `-c` option, like this:
+
+```shell
+ttrpg-convert \
+    --index \
+    -g o5e \
+    -o dm \
+    -c my-config.json \
+    open5e-api.git/data/v1
+```
+
+Next step:
+
+- Create your own [configuration file](docs/configuration.md).
+
 ## Convert Pf2eTools JSON data
 
 🚜 🚧 🚜 🚧 🚜 🚧 🚜 🚧

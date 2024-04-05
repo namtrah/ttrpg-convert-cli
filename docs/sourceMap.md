@@ -1,6 +1,7 @@
 # Source mapping
 
 - [5etools](#source-name-mapping-for-5etools)
+- [open5e](#source-name-mapping-for-open5e)
 - [Pf2eTools](#source-name-mapping-for-pf2etools)
 
 Here is the name/abbreviation mapping for source materials. 
@@ -484,3 +485,28 @@ You may see these abbreviations referenced in source material, this is how they 
 |--------------|-----------|
 | GnG | G&G |
 
+|--------------|-----------|
+| GnG | G&G |
+
+## Source name mapping for Open5e
+
+### Abbreviations to long name
+
+| Abbreviation | Alias     |
+|--------------|-----------|
+| a5e | Level Up Advanced Fifth Edition |
+| blackflag | Black Flag |
+| cc | Creature Codex |
+| dmag | Deep Magice 5e |
+| dmag-e | Deep Magic Extended |
+| kp | Kobold Press Compilation |
+| menagerie | Level Up Monsterous Menagerie |
+| o5e | Open5e Original Content |
+| taldorei | Tal'Dorei Campaign Setting |
+| tob | Tome of Beasts (2016) |
+| tob2 | Tome of Beasts II |
+| tob3 | Tome of Beasts III |
+| toh | Tome of Heroes |
+| vom | Vault of Magic |
+| warlock | Warlock Archives | 
+| wotch-srd | Fifth Edition Core Rules |

@@ -12,6 +12,7 @@ import dev.ebullient.convert.config.TtrpgConfig;
 import dev.ebullient.convert.io.Tui;
 import dev.ebullient.convert.qute.SourceAndPage;
 import dev.ebullient.convert.tools.dnd5e.Tools5eIndexType;
+import dev.ebullient.convert.tools.open5e.Open5eIndexType;
 import dev.ebullient.convert.tools.pf2e.Pf2eIndexType;
 
 public class ParseState {
@@ -336,6 +337,14 @@ public class ParseState {
     public String getSource() {
         ParseState.ParseStateInfo current = stack.peek();
         return current == null ? null : current.src;
+    }
+
+    public String getSource(Open5eIndexType featureType) {
+        ParseState.ParseStateInfo current = stack.peek();
+        if (current == null || current.src == null) {
+            return featureType == null ? null : featureType.defaultSourceString();
+        }
+        return current.src;
     }
 
     public String getSource(Tools5eIndexType type) {

@@ -226,7 +226,7 @@ public class RpgDataConvertCli implements Callable<Integer>, QuarkusApplication 
 
         if (!allOk) {
             tui.println("❌ errors reading data. Check the following: ",
-                    "- Are you specifying the right game? (-g 5e OR -g pf2e),",
+                    "- Are you specifying the right game? (-g 5e, -g o5e OR -g pf2e),",
                     "    Using " + TtrpgConfig.getConfig().datasource().shortName(),
                     "- Check error messages to see what files couldn't be read",
                     "   For bulk conversion, specify the the <tools>/data directory");

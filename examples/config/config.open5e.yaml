@@ -1,0 +1,27 @@
+---
+from:
+- "a5e"
+paths:
+  compendium: "/compendium/"
+  rules: "rules/"
+include:
+- "spell|ambush|kp"
+includeGroup:
+- "familiars"
+exclude:
+- "monster|expert|menagerie"
+excludePattern:
+- "background|.*|a5e"
+template:
+  background: "examples/templates/tools5e/images-background2md.txt"
+useDiceRoller: false
+yamlStatblocks: true
+tagPrefix: "ttrpg-cli"
+images:
+  internalRoot: "local/path/for/remote/images"
+  copyInternal: true
+  copyExternal: true
+full-source:
+  book:
+  - "a5e"
+  - "menagerie"

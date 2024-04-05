@@ -11,6 +11,7 @@ import dev.ebullient.convert.config.Datasource;
 import dev.ebullient.convert.config.TtrpgConfig;
 import dev.ebullient.convert.io.MarkdownWriter;
 import dev.ebullient.convert.tools.dnd5e.Tools5eIndex;
+import dev.ebullient.convert.tools.open5e.Open5eIndex;
 import dev.ebullient.convert.tools.pf2e.Pf2eIndex;
 
 public interface ToolsIndex {
@@ -30,6 +31,8 @@ public interface ToolsIndex {
     static ToolsIndex createIndex(Datasource game, CompendiumConfig config) {
         if (Objects.requireNonNull(game) == Datasource.toolsPf2e) {
             return new Pf2eIndex(config);
+        } else if (Objects.requireNonNull(game) == Datasource.open5e) {
+            return new Open5eIndex(config);
         }
         return new Tools5eIndex(config);
     }

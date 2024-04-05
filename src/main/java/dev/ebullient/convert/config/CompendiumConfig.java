@@ -172,6 +172,7 @@ public class CompendiumConfig {
 
     public List<String> getBooks() {
         // works for 5eTools and pf2eTools
+        // Will **not** work for Open5e
         return books.stream()
                 .map(b -> {
                     if (b.endsWith(".json")) {
@@ -187,6 +188,7 @@ public class CompendiumConfig {
 
     public List<String> getAdventures() {
         // works for 5eTools and pf2eTools
+        // Will **not** work for Open5e
         return adventures.stream()
                 .map(a -> {
                     if (a.endsWith(".json")) {

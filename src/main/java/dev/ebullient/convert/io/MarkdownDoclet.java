@@ -505,6 +505,7 @@ public class MarkdownDoclet implements Doclet {
                 "-sourcepath", "src/main/java/",
                 "dev.ebullient.convert.qute",
                 "dev.ebullient.convert.tools.dnd5e.qute",
+                "dev.ebullient.convert.tools.open5e.qute",
                 "dev.ebullient.convert.tools.pf2e.qute"
         };
         DocumentationTool docTool = ToolProvider.getSystemDocumentationTool();

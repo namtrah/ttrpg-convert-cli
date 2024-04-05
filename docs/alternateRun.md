@@ -1,14 +1,16 @@
 # Other ways to run the CLI
 
-- [Use JBang](#use-jbang)
-- [Use Homebrew](#use-homebrew)
+- [Other ways to run the CLI](#other-ways-to-run-the-cli)
+  - [Use JBang](#use-jbang)
+  - [Use Homebrew](#use-homebrew)
     - [Use pre-built platform binary](#use-pre-built-platform-binary)
-- [Use Java to run the jar](#use-java-to-run-the-jar)
-- [Build and run from source](#build-and-run-from-source)
-- [Using unreleased snapshots](#using-unreleased-snapshots)
+  - [Use Java to run the jar](#use-java-to-run-the-jar)
+  - [Build and run from source](#build-and-run-from-source)
+  - [Using unreleased snapshots](#using-unreleased-snapshots)
 
 [conventions]: ../README.md#conventions
 [5etools-data]: ../README.md#convert-5etools-json-data
+[open5e-data]: ../README.md#convert-open5e-json-data
 [pf2e-data]: ../README.md#convert-pf2etools-json-data
 [homebrew]: ../README.md#convert-homebrew-json-data
 [config]: ./configuration.md
@@ -49,6 +51,7 @@ Next steps:
 
 - Understand [CLI plugin and usage conventions][conventions].
 - [Convert 5eTools JSON data][5etools-data]
+- [Convert Open5e JSON data][open5e-data]
 - [Convert PF2eTools JSON data][pf2e-data]
 - [Convert Homebrew JSON data][homebrew]
 - Create your own [configuration file][config].
@@ -82,6 +85,7 @@ Next steps:
 
 - Understand [CLI plugin and usage conventions][conventions].
 - [Convert 5eTools JSON data][5etools-data]
+- [Convert Open5e JSON data][open5e-data]
 - [Convert PF2eTools JSON data][pf2e-data]
 - [Convert Homebrew JSON data][homebrew]
 - Create your own [configuration file][config].
@@ -115,6 +119,7 @@ Next steps:
 
 - Understand [CLI plugin and usage conventions][conventions].
 - [Convert 5eTools JSON data][5etools-data]
+- [Convert Open5e JSON data][open5e-data]
 - [Convert PF2eTools JSON data][pf2e-data]
 - [Convert Homebrew JSON data][homebrew]
 - Create your own [configuration file][config].
@@ -148,6 +153,7 @@ Next steps:
 
 - Understand [CLI plugin and usage conventions][conventions].
 - [Convert 5eTools JSON data][5etools-data]
+- [Convert Open5e JSON data][open5e-data]
 - [Convert PF2eTools JSON data][pf2e-data]
 - [Convert Homebrew JSON data][homebrew]
 - Create your own [configuration file][config].
@@ -184,6 +190,7 @@ Next steps:
 
 - Understand [CLI plugin and usage conventions][conventions].
 - [Convert 5eTools JSON data][5etools-data]
+- [Convert Open5e JSON data][open5e-data]
 - [Convert PF2eTools JSON data][pf2e-data]
 - [Convert Homebrew JSON data][homebrew]
 - Create your own [configuration file][config].

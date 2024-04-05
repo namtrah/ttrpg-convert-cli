@@ -31,6 +31,7 @@ import io.quarkus.test.junit.main.LaunchResult;
 public class TestUtils {
     public final static Path PROJECT_PATH = Paths.get(System.getProperty("user.dir")).toAbsolutePath();
     public final static Path OUTPUT_ROOT_5E = PROJECT_PATH.resolve("target/test-5e");
+    public final static Path OUTPUT_ROOT_O5E = PROJECT_PATH.resolve("target/test-o5e");
     public final static Path OUTPUT_ROOT_PF2 = PROJECT_PATH.resolve("target/test-pf2");
 
     public final static Path TEST_RESOURCES = PROJECT_PATH.resolve("src/test/resources/");
@@ -38,6 +39,9 @@ public class TestUtils {
     // for compile/test purposes. Must clone/sync separately.
     public final static Path PATH_5E_TOOLS_DATA = PROJECT_PATH.resolve("sources/5etools-mirror-2.github.io/data");
     public final static Path PATH_5E_TOOLS_IMAGES = PROJECT_PATH.resolve("sources/5etools-img");
+
+    public final static Path PATH_O5E_TOOLS_DATA = PROJECT_PATH.resolve("sources/open5e-api/data/v1");
+    public final static Path PATH_O5E_TOOLS_IMAGES = PROJECT_PATH.resolve("sources/open5e-api/data/v1");
 
     public final static Path PATH_5E_HOMEBREW = PROJECT_PATH.resolve("sources/5e-homebrew");
     public final static Path PATH_5E_UA = PROJECT_PATH.resolve("sources/5e-unearthed-arcana");

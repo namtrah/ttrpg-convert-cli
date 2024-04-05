@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 
 public enum Datasource {
     tools5e("5e", "5etools"),
+    open5e("o5e", "open5e"),
     toolsPf2e("pf2e", "pf2etools");
 
     public final List<String> format;
@@ -32,7 +33,7 @@ public enum Datasource {
 
     public static class DatasourceCandidates extends ArrayList<String> {
         DatasourceCandidates() {
-            super(List.of("5e", "pf2e"));
+            super(List.of("5e", "pf2e", "o5e"));
         }
     }
 }

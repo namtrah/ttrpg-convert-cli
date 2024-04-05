@@ -244,6 +244,23 @@ public class TtrpgConfig {
                 }
             }
         }
+        if (datasource == Datasource.open5e) {
+            JsonNode configo5e = ConfigKeys.configo5e.get(node);
+            if (configo5e != null) {
+                config.abvToName.putAll(ConfigKeys.abvToName.getAsKeyLowerMap(configo5e));
+                config.longToAbv.putAll(ConfigKeys.longToAbv.getAsKeyLowerMap(configo5e));
+                config.fallbackImagePaths.putAll(ConfigKeys.fallbackImage.getAsMap(configo5e));
+                config.markerFiles.addAll(ConfigKeys.markerFiles.getAsList(configo5e));
+                config.sources.addAll(ConfigKeys.sources.getAsList(configo5e));
+                config.indexes.putAll(ConfigKeys.indexes.getAsKeyLowerMap(configo5e));
+                config.templateKeys.addAll(ConfigKeys.templateKeys.getAsList(configo5e));
+
+                Map<String, List<Fix>> fixes = ConfigKeys.fixes.getAs(configo5e, FIXES);
+                if (fixes != null) {
+                    config.fixes.putAll(fixes);
+                }
+            }
+        }
         if (datasource == Datasource.toolsPf2e) {
             JsonNode configPf2e = ConfigKeys.configPf2e.get(node);
             if (configPf2e != null) {
@@ -320,6 +337,7 @@ public class TtrpgConfig {
         aliases,
         abvToName,
         config5e,
+        configo5e,
         configPf2e,
         constants,
         fallbackImage,
